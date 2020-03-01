@@ -1,0 +1,68 @@
+.container{
+  padding: 10px;
+}
+#recomm,#strat,#imp{
+  color: black;
+  background-color:red;
+  display: block;
+  justify-content: space-around;
+  margin-right:50px;
+  padding: 10px;
+}
+#title{
+  color: white;
+}
+#header{
+  padding:50px;
+  padding-bottom: 10px;
+  background-color: rgb(68, 114, 196);
+  padding-left: 20px;
+  text-align: center;
+  justify-content: center;
+  display:grid;
+  clear: both;
+}
+#recom #strat #imp{
+  background-color: rgb(68, 114, 196);
+}
+#btngrp{
+  display:flex;
+  list-style: none;
+  justify-content:space-between;
+  padding:5px;
+}
+#btn1,#btn2,#btn3,#btn4,#btn5{
+  padding:10px;
+  margin: auto;
+  background-color: grey;
+  color: black;
+}
+#nav{
+  border-style: solid;
+  font-size: small;
+  padding:0;
+  background-color: #f0e9e9;
+}
+#footer{
+  background-color: black;
+  clear: both;
+  height: auto;
+}
+#footnote{
+color: white;
+}
+#btn1{
+  background-color: #e86209;
+}
+#btn2{
+  background-color: #8709e8;
+}
+#btn3{
+  background-color: #e82309;
+}
+#btn4{
+  background-color: #09b01a;
+}
+#btn5{
+  background-color: #f2eb24;
+}
