@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dashboard',
+    'users.apps.UsersConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -82,9 +84,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'CA',
-        'HOST':'mongodb+srv://rohan:abc12345@ca-tbc5d.mongodb.net/test?retryWrites=true&w=majority',
+        'HOST':'mongodb+srv://rohan:dMJizwizkZDH6Qqo@ca-tbc5d.mongodb.net/test?retryWrites=true&w=majority',
         'USER':'rohan',
-        'PASSWORD':'abc12345',
+        'PASSWORD':'dMJizwizkZDH6Qqo',
         'PORT':27010
     }
 }
@@ -130,3 +132,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS=[
     STATIC_DIR,
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'home'

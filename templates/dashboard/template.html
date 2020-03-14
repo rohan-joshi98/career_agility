@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% block title %} {% endblock title %}
+    <link rel="stylesheet" href="{% static "/css/bootstrap.min.css"%}">
+    <link rel="stylesheet" href="{% static "/css/bootstrap-grid.min.css"%}">
+    <link rel="stylesheet" href="{% static "/css/bootstrap-grid.css"%}">
+    <link rel="stylesheet" href="{% static "/css/template_master.css" %}" />
+    {% block link %}{% endblock link %}
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo">
+        <img src="{% static "/images/logo1.jpg"%}" alt="" height="" width=""> 
+      </div>
+      <div id="button">
+        <a type="button" href="{% url 'logout' %}" class="button1"><button>Logout</button></a>
+        <br>
+      </div>
+      <p id="site_name">Implementation Dashboard 2019</p>
+      <div id="btn">
+        {% block btn %}
+        {% endblock btn %}
+      </div>
+    </div>
+    <div id="pg_name">
+      {% block page %}
+
+      {% endblock page %}
+    </div>
+    <div id="sidenav">
+      <div class="sidenav1">
+        <b>Dimension</b>
+        <a href="#">Career Advancement</a>
+        <a href="#">Career Developmemnt</a>
+        <a href="#">Workplace Flexibility</a>
+        <a href="#">Overall Work Enviroment</a>
+      </div>
+      <div class="sidenav2">
+        <a href="#">Employee A</a>
+        <a href="#">Employee B</a>
+        <a href="#">Employee C</a>
+        <a href="#">Employee D</a>
+      </div>
+    </div>
+    <div id="main">
+      {% block main %}
+      
+      {% endblock main %}
+    </div>
+  </body>
+
+</html>
