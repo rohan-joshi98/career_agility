@@ -1,0 +1,30 @@
+{% extends 'dashboard/base.html' %}
+{% block main2 %}
+<form method="POST">
+      <div class="table3">
+        <table>
+          <thead>
+            <th>TASK</th>
+            <th>RESPONSIBLE</th>
+            <th>START</th>
+            <th>END</th>
+            <th>DAYS</th>
+            <th>STATUS</th>
+            <th>PREDECESSORS</th>
+          </thead>
+
+          <tr>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+            <td> <input type="text"></td>
+          </tr>
+          <tr><td align="center" colspan="7">
+          <input type="submit"></td></tr>
+        </table>
+      </div>
+    </form>
+{% endblock main2 %}

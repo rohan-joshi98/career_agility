@@ -11,14 +11,14 @@ html, body{
   width: 250px;
 }
 #header {
-    padding: 20px;
-    padding-bottom: 10px;
-    background-color: rgb(68, 114, 196);
-    padding-left: 20px;
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    clear: both;
+  padding: 20px;
+  padding-bottom: 10px;
+  background-color: rgb(68, 114, 196);
+  padding-left: 20px;
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  clear: both;
 
 }
 #site_name{

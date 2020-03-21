@@ -1,5 +1,5 @@
 from django.contrib import admin
-from dashboard.models import Indicators,Recommendation
+from dashboard.models import Indicators
 # Register your models here.
 admin.site.register(Indicators)
-admin.site.register(Recommendation)
+

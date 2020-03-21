@@ -1,0 +1,9 @@
+{% extends 'dashboard/template.html' %}
+{% load staticfiles %}
+{% block main1 %}
+<form method= "POST">
+{% csrf_token %}
+{{form.as_p}}
+<input type="submit">
+</form>
+{% endblock main1 %}

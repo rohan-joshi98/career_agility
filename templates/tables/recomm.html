@@ -1,0 +1,32 @@
+{% extends 'dashboard/template.html' %}
+{% load staticfiles %}
+{% block link %}<link rel="stylesheet" href="{% static "/css/tables_master.css" %}"/> {% endblock link %}
+{% block main2 %}
+<form method="POST">
+      <div class="table2">
+        <table style="max-width:400px;">
+            <thead>
+                <th>Indicators</th>
+                <th>Recommendation</th>
+                <th>Category</th>
+                <th>Priority</th>
+                <th>Target Date</th>
+            </thead>
+            <tr>
+                <td align="center"> 1 </td>
+                <td> <input type="text"></td>
+                <td> <input type="text"></td>
+                <td> <input type="text"></td>
+                <td> <input type="text"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="5"><input type="submit" value="Add"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="5"><input type="submit"></td>
+            </tr>
+        </table>
+      </div>
+    </form>
+
+{% endblock main2 %}
